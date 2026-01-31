@@ -1,10 +1,10 @@
 # Book Scraper - Books to Scrape Website
 
-## 📋 Project Overview
+##  Project Overview
 
 This project implements a comprehensive web scraper to extract book data from [Books to Scrape](http://books.toscrape.com/), a practice website designed for web scraping. The scraper collects book information including titles, prices, ratings, availability status, and product URLs, then stores the data in a structured CSV format for analysis.
 
-## 🎯 Business Objectives
+##  Business Objectives
 
 ### Primary Goals
 - **Data Collection**: Automate the collection of book data from the Books to Scrape website
@@ -18,14 +18,10 @@ This project implements a comprehensive web scraper to extract book data from [B
 3. **Competitive Analysis**: Compare book ratings and pricing
 4. **Data Mining**: Extract structured data for further processing and analysis
 
-## 🏗️ Business Flow
+## Business Flow
 
-### High-Level Process Flow
-
+###  Process Flow
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    BOOK SCRAPER WORKFLOW                     │
-└─────────────────────────────────────────────────────────────┘
 
 1. INITIALIZATION
    ├── Create scraper instance
@@ -132,7 +128,7 @@ This project implements a comprehensive web scraper to extract book data from [B
   - Handle encoding (UTF-8)
 - **Output**: `books_data.csv` file
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 User Story4/
@@ -145,7 +141,7 @@ User Story4/
 └── scraper.log              # Log file (generated during execution)
 ```
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -168,7 +164,7 @@ User Story4/
    python -c "import requests, bs4; print('Dependencies installed successfully!')"
    ```
 
-## 💻 Usage
+##  Usage
 
 ### Basic Usage
 
@@ -216,7 +212,7 @@ Or using unittest:
 python -m unittest test_book_scraper.py -v
 ```
 
-## 📊 Output Format
+##  Output Format
 
 ### CSV File Structure
 
@@ -238,36 +234,36 @@ Title,Price,Rating,Availability,URL
 ...
 ```
 
-## 🧪 Test Cases
+##  Test Cases
 
 The project includes comprehensive test cases:
 
 ### Test Case 1: Verify CSV File Download
 - **Objective**: Ensure CSV file is created successfully
 - **Validates**: File existence, file size > 0
-- **Status**: ✅ Implemented
+- **Status**:  Implemented
 
 ### Test Case 2: Verify CSV File Extraction
 - **Objective**: Ensure data can be read from CSV
 - **Validates**: CSV readability, data extraction, required columns
-- **Status**: ✅ Implemented
+- **Status**: Implemented
 
 ### Test Case 3: Validate File Type and Format
 - **Objective**: Ensure file is valid CSV format
 - **Validates**: File extension, encoding (UTF-8), CSV structure
-- **Status**: ✅ Implemented
+- **Status**:  Implemented
 
 ### Test Case 4: Validate Data Structure
 - **Objective**: Ensure data has correct structure and types
 - **Validates**: Required fields, data types, value ranges
-- **Status**: ✅ Implemented
+- **Status**:  Implemented
 
 ### Test Case 5: Handle Missing or Invalid Data
 - **Objective**: Ensure scraper handles errors gracefully
 - **Validates**: Error handling, graceful degradation, no crashes
-- **Status**: ✅ Implemented
+- **Status**:  Implemented
 
-## 🔧 Configuration
+##  Configuration
 
 ### Adjustable Parameters
 
@@ -284,7 +280,7 @@ scraper = BookScraper(base_url="http://books.toscrape.com/")
 scraper.save_to_csv(filename="custom_filename.csv")
 ```
 
-## 📝 Logging
+##  Logging
 
 The scraper generates detailed logs in `scraper.log`:
 
@@ -300,7 +296,7 @@ The scraper generates detailed logs in `scraper.log`:
 2024-01-15 10:30:50 - INFO - Scraping completed. Total books scraped: 1000
 ```
 
-## ⚠️ Error Handling
+##  Error Handling
 
 ### Handled Scenarios
 
@@ -324,7 +320,7 @@ The scraper generates detailed logs in `scraper.log`:
    - Action: Log info, continue to next page
    - Example: No books found
 
-## 🔍 Code Documentation
+##  Code Documentation
 
 ### Key Classes
 
@@ -354,14 +350,14 @@ Orchestrates pagination and scrapes all books across all pages.
 
 **Returns**: List of all book dictionaries
 
-## 📈 Performance Considerations
+##  Performance Considerations
 
 - **Request Delay**: 1 second between requests (configurable)
 - **Timeout**: 10 seconds per request
 - **Expected Duration**: ~20-30 minutes for all pages (1000 books)
 - **Memory Usage**: Moderate (stores all books in memory before writing)
 
-## 🛡️ Best Practices Implemented
+##  Best Practices Implemented
 
 1. **Respectful Scraping**: Delays between requests
 2. **Error Handling**: Graceful degradation, no crashes
@@ -371,7 +367,7 @@ Orchestrates pagination and scrapes all books across all pages.
 6. **Modular Design**: Separated concerns, reusable methods
 7. **Testing**: Comprehensive test suite
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -393,15 +389,15 @@ Orchestrates pagination and scrapes all books across all pages.
    - Normal for large datasets
    - Adjust `request_delay` if needed (but be respectful)
 
-## 📄 License
+##  License
 
 This project is for educational and data analysis purposes.
 
-## 👥 Author
+##  Author
 
 Data Analyst - UnifyCX Internship
 
-## 📅 Version History
+##  Version History
 
 - **v1.0** (2024): Initial release
   - Full scraping functionality
@@ -410,7 +406,7 @@ Data Analyst - UnifyCX Internship
   - CSV export
   - Comprehensive test suite
 
-## 🔗 References
+##  References
 
 - [Books to Scrape Website](http://books.toscrape.com/)
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
@@ -418,13 +414,3 @@ Data Analyst - UnifyCX Internship
 
 ---
 
-## 📞 Support
-
-For issues or questions, please check:
-1. `scraper.log` for detailed error messages
-2. Test suite output for validation issues
-3. Code comments for implementation details
-
----
-
-**Happy Scraping! 📚**
